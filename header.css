@@ -1,0 +1,143 @@
+.head {
+  background: hsl(217, 28%, 15%);
+  position: relative !important;
+  z-index: 2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.headName {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.headLinks {
+  font-size: 24px;
+  color: var(--light-color);
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  text-transform: uppercase;
+  transition: 1s;
+}
+
+.headLinks a {
+  cursor: pointer;
+}
+
+.headLinks a:hover {
+  color: #fff;
+}
+
+.mainWrapper {
+  background-image: radial-gradient(white 0.1px, transparent 2px);
+  background-size: 100px 100px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainImg {
+  max-height: 60vh;
+  width: fit-content;
+  margin-top: 4vh;
+  animation-name: updown;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform: translateY(10px);
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.mainText {
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mainText > h1 {
+  font-size: 6.4vh;
+}
+
+.main > button {
+  padding: 1.5vh 5.5vh;
+  font-size: 4vh;
+  font-weight: 5 00;
+  background: var(--secondary-color);
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 10vh;
+}
+
+.main > button:hover {
+  background: var(--light-color);
+  letter-spacing: 0.2em;
+  transition: letter-spacing 1s ease;
+}
+
+#wave1 {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  bottom: 0px;
+  z-index: -1;
+}
+
+#arrow1 {
+  height: 150px;
+  position: absolute;
+  bottom: 150px;
+  left: -100px;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20vh 0;
+}
+
+.features div {
+  margin: 5%;
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.features div > h1 {
+  font-size: 3vh;
+}
+
+.features div > h3 {
+  font-size: 2vh;
+  font-weight: 200;
+}
