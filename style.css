@@ -51,3 +51,464 @@ h3 {
   padding: 0 40px;
   overflow: hidden;
 }
+
+.head {
+  background: hsl(217, 28%, 15%);
+  position: relative !important;
+  z-index: 2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3vh 0; /* Adjust the margin for smaller screens */
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.headName {
+  display: flex;
+  align-items: center;
+  gap: 6%;
+  font-size: 1vw;
+  max-width: 30%;
+}
+
+.headName img {
+  width: 20%;
+  height: fit-content;
+}
+.headName h1 {
+  font-size: 3vw;
+}
+
+.headLinks {
+  font-size: 1.5vw; /* Use viewport width as a percentage for font size */
+  color: var(--light-color);
+  display: flex;
+  gap: 2vw; /* Use viewport width as a percentage for gap */
+  list-style: none;
+  text-transform: uppercase;
+  transition: 1s;
+  font-size: 1vw;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.headLinks a {
+  cursor: pointer;
+}
+
+.headLinks a:hover {
+  color: #fff;
+}
+
+.mainWrapper {
+  background-image: radial-gradient(white 0.1px, transparent 2px);
+  background-size: 100px 100px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainImg {
+  max-height: 60vh;
+  width: fit-content;
+  margin-top: 4vh;
+  animation-name: updown;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform: translateY(10px);
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.mainText {
+  max-width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mainText > h1 {
+  position: relative;
+  text-shadow: 0.04em 0.04em 0 hsla(230, 40%, 50%, 1);
+  font-size: 3vw; /* Use viewport width as a percentage for font size */
+}
+
+.main > button {
+  font-size: 2vw; /* Use viewport width as a percentage for font size */
+  padding: 1.5vh 3vw; /* Use viewport width as a percentage for padding */
+  font-weight: 500;
+  background: var(--secondary-color);
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 5vh; /* Adjust the margin for smaller screens */
+}
+
+.main > button:hover {
+  background: var(--light-color);
+  letter-spacing: 0.2em;
+  transition: letter-spacing 1s ease-in-out;
+}
+
+#wave1 {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  bottom: 0px;
+  z-index: -1;
+}
+
+#arrow1 {
+  height: 20vh;
+  opacity: 10%;
+  position: absolute;
+  bottom: 150px;
+  left: -100px;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 120vh;
+  margin: 10vh 0; /* Adjust the margin for smaller screens */
+}
+
+.features div {
+  margin: 3%;
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.features div > h1 {
+  font-size: 1.7vw; /* Use viewport width as a percentage for font size */
+}
+
+.features div > h3 {
+  font-size: 1vw; /* Use viewport width as a percentage for font size */
+  font-weight: 200;
+}
+
+.feaGra {
+  position: absolute;
+  z-index: -1;
+  opacity: 1%;
+  overflow: hidden;
+  height: max-content;
+  width: 100vh;
+  animation: threesixty 20s linear infinite;
+}
+
+@keyframes threesixty {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.stayProductive {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 100px;
+  margin: 10vh 0;
+}
+
+.stayLeft > img {
+  height: 25vw; /* Adjust the percentage for image height */
+  animation-name: increaseDecrease;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* min-width: 40%;  */
+}
+.stayRight {
+  max-width: 60%;
+}
+.stayRight > h1 {
+  font-size: 3vw; /* Use viewport width as a percentage for font size */
+}
+
+.stayRight > h3 {
+  font-size: 1.3vw; /* Use viewport width as a percentage for font size */
+}
+
+.stayRight span {
+  cursor: pointer;
+  color: var(--secondary-color);
+  text-decoration: underline 2px;
+  font-weight: 500;
+  transition: 1s;
+}
+
+.stayRight span:hover {
+  color: var(--hover-color) !important;
+}
+
+@keyframes increaseDecrease {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.testimony {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  padding-bottom: 20vh;
+}
+
+.testimony > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 35%;
+  max-width: 35%;
+  margin: 3%;
+  gap: 20px;
+  background: #1b2330c9;
+  padding: 3vh 2vw; /* Use viewport width as a percentage for padding */
+  box-shadow: 10px 10px 0px rgb(202 219 255 / 9%);
+  position: relative;
+}
+.testiGra {
+  position: absolute;
+  top: -35px;
+  left: -12px;
+  z-index: -1;
+}
+.author > img {
+  border-radius: 100%;
+  width: 7vh; /* Adjust the percentage for image width */
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1.5vh;
+}
+
+.testimony p {
+  font-size: 1vw; /* Use viewport width as a percentage for font size */
+  font-weight: 200;
+}
+
+.author > span > h1 {
+  font-size: 1.4vw; /* Use viewport width as a percentage for font size */
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.author > span > h3 {
+  font-size: 1vw; /* Use viewport width as a percentage for font size */
+  font-weight: 200;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .headLinks {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+
+  .main > button {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+    padding: 1vh 6vw; /* Adjust padding for smaller screens */
+    margin-top: 10vh; /* Adjust margin for smaller screens */
+  }
+
+  .main > div > h1 {
+    font-size: 5vw;
+  }
+  .main > div > h3 {
+    font-size: 3vw;
+  }
+
+  .features {
+    margin: 5vh 0; /* Adjust margin for smaller screens */
+  }
+
+  .features div > h1 {
+    font-size: 5vw; /* Adjust font size for smaller screens */
+  }
+
+  .features div > h3 {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+
+  .stayProductive {
+    gap: 5vh;
+    flex-direction: column; /* Adjust flex direction for smaller screens */
+  }
+
+  .stayLeft > img {
+    height: 60vw; /* Adjust image height for smaller screens */
+  }
+  .stayRight {
+    min-width: 80%;
+  }
+  .stayRight > h1 {
+    font-size: 6vw; /* Adjust font size for smaller screens */
+  }
+
+  .stayRight > h3 {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+
+  .stayRight span {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+
+  .testimony > div {
+    min-width: 80%; /* Adjust min-width for smaller screens */
+    max-width: 80%; /* Adjust max-width for smaller screens */
+    margin: 5% auto; /* Adjust margin for smaller screens */
+    padding: 5vh 4vw; /* Adjust padding for smaller screens */
+  }
+
+  .author > img {
+    width: 9vw; /* Adjust image width for smaller screens */
+  }
+
+  .testimony p {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+
+  .author > span > h1 {
+    font-size: 4vw; /* Adjust font size for smaller screens */
+  }
+
+  .author > span > h3 {
+    font-size: 2vw; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Continue with the rest of your CSS ... */
+
+.footer {
+  padding: 15vh 10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerMob {
+  display: none;
+}
+
+.footleft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+  flex-wrap: wrap;
+}
+.footleft div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.footleft > div > h1 {
+  font-weight: 600;
+  font-size: 2vw;
+}
+
+.footleft > div > p {
+  font-weight: 200;
+  font-size: 1vw;
+}
+
+.footright {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 50px;
+  gap: 10%;
+  width: 70%;
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 850px) {
+  .feaGra {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #mainImg {
+    max-height: 40vh !important;
+  }
+
+  .features {
+    margin: 20vh 0;
+  }
+  .wrapper {
+    width: unset;
+  }
+  .footer {
+    display: none;
+  }
+  .footerMob {
+    display: flex;
+    flex-direction: column;
+    padding: 10vw 5vw;
+    gap: 5vw;
+  }
+  .footerMob img {
+    width: 20vw;
+    height: fit-content;
+  }
+  .footerMob li {
+    display: flex;
+    flex-direction: row;
+  }
+  .footerMob li i {
+    min-width: 10%;
+  }
+  .footlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .footlinks div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
