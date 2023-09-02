@@ -17,6 +17,7 @@
     </title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./responsive.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
@@ -114,76 +115,73 @@
     </div>
     <div class="wrapper">
       <div class="features">
-        <svg
-          class="feaGra"
-          xmlns="http://www.w3.org/2000/svg"
-          width="800"
-          height="800"
-          fill="none"
-          viewBox="0 0 80 80"
-        >
-          <path
-            fill="#fff"
-            fill-rule="evenodd"
-            d="M28 28h24v24H28V28Zm1 1h22v22H29V29Z"
-            clip-rule="evenodd"
-          />
-          <path
-            fill="#fff"
-            fill-rule="evenodd"
-            d="M24 24v32h32V24H24Zm31 1H25v30h30V25Z"
-            clip-rule="evenodd"
-          />
-          <path
-            fill="#fff"
-            fill-rule="evenodd"
-            d="M20 20h40v40H20V20Zm1 1h38v38H21V21Z"
-            clip-rule="evenodd"
-          />
-          <path
-            fill="#fff"
-            fill-rule="evenodd"
-            d="M16 16v48h48V16H16Zm47 1H17v46h46V17Z"
-            clip-rule="evenodd"
-          />
-          <path
-            fill="#fff"
-            fill-rule="evenodd"
-            d="M12 12v56h56V12H12Zm55 1H13v54h54V13Z"
-            clip-rule="evenodd"
-          />
-          <path
-            fill="#fff"
-            fill-rule="evenodd"
-            d="M23.03 40 40 23.03 56.97 40 40 56.97 23.03 40Zm1.414 0L40 24.444 55.556 40 40 55.556 24.444 40Z"
-            clip-rule="evenodd"
-          />
-          <path
-            fill="#fff"
-            fill-rule="evenodd"
-            d="M17.373 40 40 62.627 62.627 40 40 17.373 17.373 40ZM40 18.787 18.787 40 40 61.213 61.213 40 40 18.787Z"
-            clip-rule="evenodd"
-          />
-          <path
-            fill="#fff"
-            fill-rule="evenodd"
-            d="M11.716 40 40 11.716 68.284 40 40 68.284 11.716 40Zm1.414 0L40 13.13 66.87 40 40 66.87 13.13 40Z"
-            clip-rule="evenodd"
-          />
-          <path
-            fill="#fff"
-            fill-rule="evenodd"
-            d="M6.059 40 40 73.941 73.941 40 40 6.059 6.059 40ZM40 7.473 7.473 40 40 72.527 72.527 40 40 7.473Z"
-            clip-rule="evenodd"
-          />
-          <path
-            fill="#fff"
-            fill-rule="evenodd"
-            d="M.402 40 40 79.598 79.598 40 40 .402.402 40ZM40 1.816 1.816 40 40 78.184 78.184 40 40 1.816Z"
-            clip-rule="evenodd"
-          />
-        </svg>
-
+          <svg
+            class="feaGra"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 80 80"
+          >
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M28 28h24v24H28V28Zm1 1h22v22H29V29Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M24 24v32h32V24H24Zm31 1H25v30h30V25Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M20 20h40v40H20V20Zm1 1h38v38H21V21Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M16 16v48h48V16H16Zm47 1H17v46h46V17Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M12 12v56h56V12H12Zm55 1H13v54h54V13Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M23.03 40 40 23.03 56.97 40 40 56.97 23.03 40Zm1.414 0L40 24.444 55.556 40 40 55.556 24.444 40Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M17.373 40 40 62.627 62.627 40 40 17.373 17.373 40ZM40 18.787 18.787 40 40 61.213 61.213 40 40 18.787Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M11.716 40 40 11.716 68.284 40 40 68.284 11.716 40Zm1.414 0L40 13.13 66.87 40 40 66.87 13.13 40Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M6.059 40 40 73.941 73.941 40 40 6.059 6.059 40ZM40 7.473 7.473 40 40 72.527 72.527 40 40 7.473Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M.402 40 40 79.598 79.598 40 40 .402.402 40ZM40 1.816 1.816 40 40 78.184 78.184 40 40 1.816Z"
+              clip-rule="evenodd"
+            />
+          </svg>
         <div data-aos="fade-right" data-aos-duration="1000">
           <img src="./images/icon-access-anywhere.svg" alt="features" />
           <h1>Access your files, anywhere</h1>
@@ -228,8 +226,13 @@
           />
         </div>
         <div class="stayRight">
-          <h1>STAY PRODUCTIVE, WHERE EVER YOU GO</h1>
-          <h3>
+          <h1 data-aos="fade-right" data-aos-duration="1500">
+            STAY PRODUCTIVE,
+          </h1>
+          <h1 data-aos="fade-right" data-aos-duration="1000">
+            WHERE EVER YOU GO
+          </h1>
+          <h3 data-aos="fade-up" data-aos-duration="1500">
             <br />
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs.
@@ -240,6 +243,56 @@
             <br />
             <span> See how Fylo works → </span>
           </h3>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="testimony">
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <img data-aos="fade-down" data-aos-duration="1000" class="testiGra" src="./images/bg-quotes.png" alt="quotes">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+            nesciunt reprehenderit fuga hic unde est nulla sunt sapiente
+            ratione, obcaecati voluptates. Provident consequuntur, inventore quo
+            maiores mollitia ad repudiandae? Magni.
+          </p>
+          <div class="author">
+            <img src="./images/profile-3.jpg" alt="profile" />
+            <span
+              ><h1>Lisa</h1>
+              <h3>Founder @ Tesla</h3></span
+            >
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1500">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+            nesciunt reprehenderit fuga hic unde est nulla sunt sapiente
+            ratione, obcaecati voluptates. Provident consequuntur, inventore quo
+            maiores mollitia ad repudiandae? Magni.
+          </p>
+          <div class="author">
+            <img src="./images/profile-2.jpg" alt="profile" />
+            <span
+              ><h1>Lewin</h1>
+              <h3>Founder @ Notion</h3></span
+            >
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+            nesciunt reprehenderit fuga hic unde est nulla sunt sapiente
+            ratione, obcaecati voluptates. Provident consequuntur, inventore quo
+            maiores mollitia ad repudiandae? Magni.
+          </p>
+          <div class="author">
+            <img src="./images/profile-1.jpg" alt="profile" />
+            <span
+              ><h1>Satish</h1>
+              <h3>Founder @ Google</h3></span
+            >
+          </div>
         </div>
       </div>
     </div>

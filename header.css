@@ -8,24 +8,37 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 0;
+  margin: 3vh 0; /* Adjust the margin for smaller screens */
   font-family: "Space Grotesk", sans-serif;
 }
 
 .headName {
   display: flex;
   align-items: center;
-  gap: 10%;
+  gap: 6%;
+  font-size: 1vw;
+  max-width: 30%;
+}
+
+.headName img {
+  width: 20%;
+  height: fit-content;
+}
+.headName h1 {
+  font-size: 3vw;
 }
 
 .headLinks {
-  font-size: 24px;
+  font-size: 1.5vw; /* Use viewport width as a percentage for font size */
   color: var(--light-color);
   display: flex;
-  gap: 20px;
+  gap: 2vw; /* Use viewport width as a percentage for gap */
   list-style: none;
   text-transform: uppercase;
   transition: 1s;
+  font-size: 1vw;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .headLinks a {
@@ -58,7 +71,6 @@ header {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   transform: translateY(10px);
-  /* position: fixed; */
 }
 
 @keyframes updown {
@@ -72,7 +84,7 @@ header {
 }
 
 .mainText {
-  max-width: 900px;
+  max-width: 80%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -82,22 +94,18 @@ header {
 .mainText > h1 {
   position: relative;
   text-shadow: 0.04em 0.04em 0 hsla(230, 40%, 50%, 1);
-  font-size: 6.4vh;
-  /* text-decoration: underline 10px var(--secondary-color);
-  text-decoration-skip-ink: none;
-  text-underline-offset: -40%;
-  text-underline-position: under; */
+  font-size: 3vw; /* Use viewport width as a percentage for font size */
 }
 
 .main > button {
-  padding: 1.5vh 5.5vh;
-  font-size: 4vh;
-  font-weight: 5 00;
+  font-size: 2vw; /* Use viewport width as a percentage for font size */
+  padding: 1.5vh 3vw; /* Use viewport width as a percentage for padding */
+  font-weight: 500;
   background: var(--secondary-color);
   border: none;
   font-family: inherit;
   cursor: pointer;
-  margin-top: 10vh;
+  margin-top: 5vh; /* Adjust the margin for smaller screens */
 }
 
 .main > button:hover {
@@ -116,7 +124,8 @@ header {
 }
 
 #arrow1 {
-  height: 150px;
+  height: 20vh;
+  opacity: 10%;
   position: absolute;
   bottom: 150px;
   left: -100px;
@@ -127,7 +136,8 @@ header {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 20vh 0;
+  min-height: 120vh;
+  margin: 10vh 0; /* Adjust the margin for smaller screens */
 }
 
 .features div {
@@ -141,11 +151,11 @@ header {
 }
 
 .features div > h1 {
-  font-size: 4vh;
+  font-size: 1.7vw; /* Use viewport width as a percentage for font size */
 }
 
 .features div > h3 {
-  font-size: 2.5vh;
+  font-size: 1vw; /* Use viewport width as a percentage for font size */
   font-weight: 200;
 }
 
@@ -153,6 +163,9 @@ header {
   position: absolute;
   z-index: -1;
   opacity: 1%;
+  overflow: hidden;
+  height: max-content;
+  width: 100vh;
   animation: threesixty 20s linear infinite;
 }
 
@@ -169,33 +182,36 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  min-height: 110vh;
   gap: 100px;
+  margin: 10vh 0;
 }
-
 .stayLeft > img {
-  height: 60vh;
+  height: 25vw; /* Adjust the percentage for image height */
   animation-name: increaseDecrease;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  /* min-width: 40%;  */
 }
-
+.stayRight {
+  max-width: 60%;
+}
 .stayRight > h1 {
-  font-size: 7vh;
+  font-size: 3vw; /* Use viewport width as a percentage for font size */
 }
 
 .stayRight > h3 {
-  font-size: 2.5vh;
+  font-size: 1.3vw; /* Use viewport width as a percentage for font size */
 }
 
 .stayRight span {
   cursor: pointer;
   color: var(--secondary-color);
-  text-decoration: underline 3px;
+  text-decoration: underline 2px;
   font-weight: 500;
   transition: 1s;
 }
+
 .stayRight span:hover {
   color: var(--hover-color) !important;
 }
@@ -208,3 +224,130 @@ header {
     transform: scale(1.1);
   }
 }
+
+.testimony {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 90vh;
+}
+
+.testimony > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 35%;
+  max-width: 35%;
+  margin: 3%;
+  gap: 20px;
+  background: #1b2330c9;
+  padding: 3vh 2vw; /* Use viewport width as a percentage for padding */
+  box-shadow: 10px 10px 0px rgb(202 219 255 / 9%);
+  position: relative;
+}
+.testiGra {
+  position: absolute;
+  top: -35px;
+  left: -12px;
+  z-index: -1;
+}
+.author > img {
+  border-radius: 100%;
+  width: 7vh; /* Adjust the percentage for image width */
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1.5vh;
+}
+
+.testimony p {
+  font-size: 1vw; /* Use viewport width as a percentage for font size */
+  font-weight: 200;
+}
+
+.author > span > h1 {
+  font-size: 1.4vw; /* Use viewport width as a percentage for font size */
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.author > span > h3 {
+  font-size: 1vw; /* Use viewport width as a percentage for font size */
+  font-weight: 200;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .headLinks {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+
+  .main > button {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+    padding: 1vh 6vw; /* Adjust padding for smaller screens */
+    margin-top: 10vh; /* Adjust margin for smaller screens */
+  }
+
+  .features {
+    margin: 5vh 0; /* Adjust margin for smaller screens */
+  }
+
+  .features div > h1 {
+    font-size: 4vw; /* Adjust font size for smaller screens */
+  }
+
+  .features div > h3 {
+    font-size: 2vw; /* Adjust font size for smaller screens */
+  }
+
+  .stayProductive {
+    gap: 5vh;
+    flex-direction: column; /* Adjust flex direction for smaller screens */
+  }
+
+  .stayLeft > img {
+    height: 60vw; /* Adjust image height for smaller screens */
+  }
+  .stayRight {
+    min-width: 80%;
+  }
+  .stayRight > h1 {
+    font-size: 5vw; /* Adjust font size for smaller screens */
+  }
+
+  .stayRight > h3 {
+    font-size: 2.5vw; /* Adjust font size for smaller screens */
+  }
+
+  .stayRight span {
+    font-size: 2vw; /* Adjust font size for smaller screens */
+  }
+
+  .testimony > div {
+    min-width: 80%; /* Adjust min-width for smaller screens */
+    max-width: 80%; /* Adjust max-width for smaller screens */
+    margin: 5% auto; /* Adjust margin for smaller screens */
+    padding: 5vh 4vw; /* Adjust padding for smaller screens */
+  }
+
+  .author > img {
+    width: 9vw; /* Adjust image width for smaller screens */
+  }
+
+  .testimony p {
+    font-size: 2vw; /* Adjust font size for smaller screens */
+  }
+
+  .author > span > h1 {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+
+  .author > span > h3 {
+    font-size: 1.5vw; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Continue with the rest of your CSS ... */
